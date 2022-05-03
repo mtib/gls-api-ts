@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "isolatedModules": true,
+        "declaration": true,
+        "lib": [
+            "ESNext",
+            "ES6",
+        ],
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+}

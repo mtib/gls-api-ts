@@ -1,0 +1,41 @@
+{
+  "name": "gls",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Markus Horst Becker",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build",
+    "watch": "parcel watch",
+    "start": "npm run build && node dist/gls-cli/cli.js"
+  },
+  "targets": {
+    "gls-api": {
+      "source": "src/gls.ts",
+      "engines": {
+        "node": ">=16"
+      },
+      "outputFormat": "esmodule",
+      "isLibrary": true
+    },
+    "gls-cli": {
+      "source": "src/cli.ts",
+      "engines": {
+        "node": ">=16"
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^17.0.31",
+    "@types/text-table": "^0.2.2",
+    "parcel": "^2.5.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "colors": "^1.4.0",
+    "lodash": "^4.17.21",
+    "text-table": "^0.2.0"
+  }
+}
